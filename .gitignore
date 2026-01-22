@@ -36,5 +36,5 @@ htmlcov/
 # OS
 Thumbs.db
 
-datos/nyc/
-bronze_output/
+datos/nyc/*
+bronze_output/*

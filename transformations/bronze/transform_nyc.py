@@ -56,7 +56,7 @@ def transform_nyc(spark, raw_bucket, bronze_bucket, prefix, date_str):
     raw_path = build_path(raw_bucket, f"{prefix}/csv/nyc/*{date_str}.csv")
     bronze_path = build_path(bronze_bucket, f"{prefix}/nyc/{date_str}/")
     
-    print(f"[INFO] Leyendo datos de NYC Airbnb desde Raw: {raw_path}")
+    print(f"[INFO] Leyendo datos de NYC desde Raw: {raw_path}")
     
     try:
         # Leer CSV desde Raw
@@ -180,7 +180,7 @@ def main():
         date_str = sys.argv[3]
     
     print("=" * 80)
-    print("TRANSFORMACIÓN BRONZE: NYC AIRBNB")
+    print("TRANSFORMACIÓN BRONZE: NYC")
     print("=" * 80)
     print(f"Raw Bucket: {raw_bucket}")
     print(f"Bronze Bucket: {bronze_bucket}")
